@@ -1,23 +1,60 @@
 aid: beekeeperai
+
 name: BeeKeeperAI
-description: 'BeeKeeperAI is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: "BeeKeeperAI provides a confidential execution platform, EscrowAI®, that protects sensitive data and proprietary AI models by leveraging confidential computing. It helps organizations mitigate cybersecurity risks associated with agentic AI while ensuring ROI and compliance. The platform offers secure AI and data processing for enterprises seeking to harness AI safely."
+
 url: https://raw.githubusercontent.com/api-evangelist/beekeeperai/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- AI
+- Confidential Computing
+- Enterprise
+- Security
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/beekeeperai-hosts.yml
+- type: Vendors
+  url: vendors/beekeeperai-vendors.yml
+- type: DomainSecurity
+  url: security/beekeeperai-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The BeeKeeperAI website is a JavaScript‑rendered single‑page app with no machine‑readable OpenAPI or other contract discovered.
+  evidence:
+    - url: https://www.beekeeperai.com/
+      status: 200
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
