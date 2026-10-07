@@ -39,6 +39,10 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: Pricing
+  url: https://www.nasdaqprivatemarket.com/data-intelligence/
+- type: Plans
+  url: plans/beekeeperai-plans-pricing.yml
 - type: Hosts
   url: hosts/beekeeperai-hosts.yml
 - type: Vendors
