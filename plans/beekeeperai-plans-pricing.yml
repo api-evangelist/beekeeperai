@@ -1,0 +1,41 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.nasdaqprivatemarket.com/data-intelligence/
+sources:
+- https://www.nasdaqprivatemarket.com/data-intelligence/
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T112025
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+  managed_tier: Plus
+published: true
+note: Nasdaq Private Market Data & Intelligence page (not beekeeperai). Three tiers listed; Free $0 and
+  Plus $100 shown without a stated billing period; Premium is quote-based with API access via Nasdaq Data
+  Link.
+plan_count: 3
+currency: USD
+plans:
+- name: Free
+  price_text: $0
+  price: 0
+  currency: USD
+  period: none
+  included_quota: NPM Price, Company profiles, Primary rounds + history
+- name: Plus
+  price_text: $100
+  price: 100
+  currency: USD
+  period: none
+  included_quota: Everything in Free, Mutual fund marks, Sacra research reports, Fundamental analysis
+- name: Premium
+  price_text: Talk to Sales
+  period: none
+  included_quota: Everything in Plus, API access, SFTP / S3 delivery, bulk data downloads, dedicated account
+    management, redisplay and distribution
